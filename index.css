@@ -1,0 +1,343 @@
+/* CSS RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* STYLE */
+
+/*@font-face {
+	font-family: "KaushanScript-Regular";
+	src : url('KaushanScript-Regular.ttf') format('truetype');
+}*/
+
+body {
+	background-color: white;
+	font-family: sans-serif;
+}
+
+.container {
+	height: 100px;
+	width: 100%;
+	background-color: white;
+	border: 1px solid lightgrey;
+	position: fixed;
+	top: 0px;
+	z-index: 9999;
+	opacity: 0.8;
+}
+
+.header {
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+.header img {
+	border-radius: 50%;
+	position: absolute;
+	top: 0px;
+	margin-left: 30px;
+}
+
+.header ul {
+	position: absolute;
+	top: 0px;
+	margin-top: 0px;
+	margin-left: 200px;
+
+}
+
+.header ul li {
+	display: inline-block;
+	margin-right: 10px;
+	padding: 10px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+
+}
+
+.header li a {
+	text-decoration: none;
+	color: orange;
+
+}
+
+.header ul a:hover {
+	transition: 0.2s;
+	background-color: lightskyblue;
+	color: white;
+}
+
+.header input {
+	position: absolute;
+	right: 40px;
+	top: 60px;
+
+}
+
+.header button {
+	position: absolute;
+	right: 40px;
+	top: 60px;
+}
+
+.heroimg {
+	height: 820px;
+	background-image: url(pic/banner.png);
+	background-position: 0px 0px;
+	margin-bottom: 40px;
+	margin-top: 102px;
+	/*border-bottom: 1.5px solid green;*/
+	box-shadow: 0px 2px 5px 2px lightgrey;
+	border-radius: 20px;
+}
+
+.bestseller a h3 {
+	font-style: oblique;
+	font-size: 20px;
+	/*font-weight: bold;*/
+	color: rgba(59, 196, 86);
+	text-decoration: none;
+	display: inline-block;
+	margin-top: 50px;
+	margin-left: 880px;
+}
+
+.bestseller a h3:hover {
+	transform: scale(1.5,1.5);
+	transition: 0.5s;
+	color: orange;
+}
+
+.bestseller ul li {
+	display: inline-block;
+	margin-top: 50px;
+	margin-left: 130px;
+	position: relative;
+}
+
+.bestseller a li img {
+	margin-top: 50px;
+}
+
+
+.bestseller img {
+	border-radius: 50%;
+	box-shadow: 0px 2px 5px 2px lightgrey;
+	/*border: 2px solid rgba(59, 196, 86);*/
+}
+
+.bestseller a li span {
+	width: 300px;
+	height: 300px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	line-height: 300px;
+	position: absolute;
+	background-position: cover;
+	left: 0px;
+	top: 50px;
+	opacity: 0;
+	border-radius: 50%;
+}
+
+.bestseller a li span:hover {
+	opacity: 0.5;
+	transition: 0.5s;
+}
+
+.gizi {
+	height: 350px;
+	width: 1800px;
+	background-color: rgba(59, 196, 86);
+	margin-top: 125px;
+	margin-left: 45px;
+	padding-top: 40px;
+	position: relative;
+	box-shadow: 0px 5px 5px lightgrey;
+	border-radius: 20px;
+}
+
+.gizi h3 {
+	font-size: 20px;
+	font-style: oblique;
+	text-align: center;
+	/*font-weight: bold;*/
+	color: white;
+}
+
+.gizi ul li {
+	display: inline-block;
+	margin-top: 50px;
+	margin-left: 130px;
+	position: relative;
+}
+
+
+.gizi img {
+	margin-top: 80px;
+	margin-left: 280px;
+}
+
+.gizi img:hover {
+	transform: scale(1.1,1.1);
+	transition: 0.5s;
+}
+
+.gizi span {
+	font-style: oblique;
+	font-weight: bold;
+	position: absolute;
+	margin-left: 10px;
+	bottom: 160px;
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.review {
+	height: 150px;
+	width: 1700px;
+	box-shadow: 0px 5px 5px lightgrey;
+	border-radius: 20px;
+	margin-top: 50px;
+	margin-left: 80px;
+	box-sizing: border-box;
+}
+
+.review ul li {
+	margin-top: 50px;
+	position: relative;
+	display: inline-block;
+	margin-left: 110px;
+	
+
+}
+
+.review h3 a {
+	color: rgba(93, 94, 94);
+	font-size: 15px;
+	font-weight: bold;
+	font-style: oblique;
+	margin-right: 50px;
+	margin-bottom: 0px;
+	margin-left: 250px;
+	text-decoration: none;
+	margin-top: 100px;
+}
+
+
+.review p {
+	border: 2px solid orange;
+	padding: 10px;
+	margin-left: 230px;
+	margin-bottom: 50px;
+	/*margin-top: 20px;*/
+	margin-right: 200px;
+	color: rgba(93, 94, 94);
+	font-size: 15px;
+
+	
+}
+
+.review img {
+	margin-left: 45px;
+	border-radius: 20px;
+	box-shadow: 0px 2px 5px 2px lightgrey;
+	display: inline-block;
+	position: absolute;
+	top: -35px;
+}
+
+.footer {
+	height: 30px;
+	width: auto;
+	background-color: white;
+	font-size: 14px;
+	font-style: oblique;
+	text-align: right;
+	padding: 5px;
+	bottom: 0px;
+	margin-top: 50px;
+	line-height: 30px;
+	border-top: 1px solid lightgrey;
+	
+}
+
+.footer span {
+	
+	margin-right: 20px;
+	color: green;
+}
+
+.footer a {
+	text-decoration: none;
+	display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+/* MICRO CLEARFIX */
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
